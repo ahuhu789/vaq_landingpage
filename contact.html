@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - In Ấn Sơn Thủy</title>
+    <meta name="description" content="Liên hệ với Sơn Thủy để nhận tư vấn.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-header"></div>
+    
+    <main>
+        <section class="section-padding" style="padding-top: 40px; min-height: 50vh;">
+            <h1 class="section-title">Liên Hệ Với Chúng Tôi</h1>
+            
+            <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div style="background: var(--bg-light); padding: 40px; border-radius: var(--border-radius-box);">
+                    <h3 style="margin-bottom: 20px; color: var(--primary-color);">Thông tin liên hệ</h3>
+                    <p><strong>Văn phòng chính:</strong><br> <a href="mailto:sangtao@sangtaodesign.com">sangtao@sangtaodesign.com</a></p>
+                    <p style="margin-top: 15px;"><strong>Văn phòng giao dịch:</strong><br> <a href="mailto:design@sangtaodesign.com">design@sangtaodesign.com</a></p>
+                    <p style="margin-top: 15px;"><strong>Hotline:</strong><br> 028 3 97 97 991<br>0903 705 339<br>0913 924 336</p>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--primary-color);">Gửi tin nhắn</h3>
+                    <form style="display: flex; flex-direction: column; gap: 15px;">
+                        <input type="text" placeholder="Họ và tên" style="padding: 12px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <input type="email" placeholder="Email" style="padding: 12px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <textarea rows="5" placeholder="Nội dung" style="padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; font-family: inherit;"></textarea>
+                        <button type="button" class="btn-primary" style="padding: 12px;">Gửi Liên Hệ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="app-footer"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

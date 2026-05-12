@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "vaq-landingpage",
+    "public": "dist",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
