@@ -1,12 +1,45 @@
-node_modules
-dist
-dist-ssr
-*.local
+```
+# Build outputs
+dist/
+build/
+*.js.map
+*.css.map
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
 .env.local
-.env.*.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.firebase
-.DS_Store
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+nosetests.xml
+```
