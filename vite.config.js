@@ -3,6 +3,13 @@ import { resolve } from 'path';
 
 export default defineConfig({
   build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
@@ -11,7 +18,22 @@ export default defineConfig({
         customers: resolve(__dirname, 'customers.html'),
         contact: resolve(__dirname, 'contact.html'),
         enMain: resolve(__dirname, 'en/index.html')
-      }
-    }
-  }
+      },
+      output: {
+        manualChunks: {
+          vendor: ['vue'],
+        },
+      },
+    },
+    cssCodeSplit: true,
+    assetsInlineLimit: 4096,
+    chunkSizeWarningLimit: 500,
+  },
+  server: {
+    port: 3000,
+    open: true,
+  },
+  preview: {
+    port: 4173,
+  },
 });
